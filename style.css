@@ -1,0 +1,300 @@
+#clock{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate( -50%, -50%);
+    width: 250px;
+    height: 250px;
+    border: #63B995 solid 5px;
+    border-radius: 125px;
+    box-shadow : 5px 5px 5px  #3b6f59 inset, 5px 5px 5px  #3b6f59;
+    background-color: #f9f9f9;
+}
+#center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    z-index: 2;
+}
+#hour{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 1px;
+    width: 50%;
+}
+#bad{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width:50%;
+    border: solid black;
+    border-width: 1px 0px 0px 0px;
+    visibility: hidden;
+}
+#good{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width:50%;
+    border: solid #FF7477;
+    border-width: 4px 0px 0px 0px;
+}
+#minute{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 1.5px;
+    width: 80%;
+}
+#bad2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:50%;
+    border: solid #ADEEE3;
+    border-width: 1px 0px 0px 0px;
+    visibility: hidden;
+}
+#good2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width:50%;
+    border: solid black;
+    border-width: 3.5px 0px 0px 0px;
+}
+#second{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 0.5px;
+    width: 90%;
+}
+#bad3{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width:50%;
+    border: solid black;
+    border-width: 1px 0px 0px 0px;
+    visibility: hidden;
+}
+#good3{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width:50%;
+    border: solid #2D7DD2;
+    border-width: 2px 0px 0px 0px;
+}
+#time12{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    font-size: x-large; 
+    color: #63B995;
+    font-weight: bold;
+}
+#time3{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0 ,-50%);
+    font-size: x-large;
+    color: #63B995;
+    font-weight: bold;
+
+}
+#time6{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    font-size: x-large;
+    color: #63B995;
+    font-weight: bold;
+
+}
+#time9{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    font-size: x-large;
+    color: #63B995;
+    font-weight: bold;
+
+}
+#trait12,#trait1,#trait2,#trait3,#trait4,#trait5,#trait6,#trait7,#trait8,#trait9,#trait10,#trait11{
+    position: absolute;
+    height: 5%;
+    width:1px;
+    color: #63B995;
+    background-color: #63B995;
+    border: #63B995 solid 1px;
+    border-radius: 2px;
+}
+#trait12{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#trait6{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#trait9{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(0, -50%) rotate(90deg);
+}
+#trait3{
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translate(0, -50%) rotate(90deg);
+}
+#trait1{
+    position: absolute;
+    top: 8%;
+    left: 73%;
+    transform: translate(-50%) rotate(30deg);
+}
+#trait5{
+    position: absolute;
+    bottom: 8%;
+    left: 73%;
+    transform: translate(-50%) rotate(-30deg);
+}
+#trait7{
+    position: absolute;
+    bottom: 8%;
+    right: 73%;
+    transform: translate(-50%) rotate(30deg);
+}
+#trait11{
+    position: absolute;
+    top: 8%;
+    right: 73%;
+    transform: translate(-50%) rotate(-30deg);
+}
+#trait2{
+    position: absolute;
+    right: 10%;
+    bottom: 73%;
+    transform: translate(0 ,50%) rotate(60deg);
+}
+#trait4{
+    position: absolute;
+    right: 10%;
+    top: 73%;
+    transform: translate(0 ,-50%) rotate(-60deg);
+}
+#trait8{
+    position: absolute;
+    left: 10%;
+    top: 73%;
+    transform: translate(0 ,-50%) rotate(60deg);
+}
+#trait10{
+    position: absolute;
+    left: 10%;
+    bottom: 73%;
+    transform: translate(0 ,50%) rotate(-60deg);
+}
+#digital{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate( -50%, -50%);
+    width: 350px;
+    height: 100p;
+    border: 1px solid black;
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    font: helvetica;
+    background-color: #f9f9f9;
+    border: solid 5px;
+    border-image: linear-gradient(#26C485, #32908F) 1;
+    box-shadow : 5px 5px 5px  #3b6f59 inset, 5px 5px 5px  #3b6f59;
+}
+#digital_hour{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: helvetica;
+    font-size: 60px;
+    color: #A3E7Fc;
+    font-weight: bold;
+}
+#digital_minute{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: helvetica;
+    font-size: 60px;
+    color: #82FF9E;
+    font-weight: bold;
+
+}
+#point{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 5px;
+    height: 5px;
+    border: 1px solid #30D5C8;
+    border-radius: 5px;
+    background-color: #30D5C8;
+}
+#point2{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 5px;
+    height: 5px;
+    border: 1px solid #30D5C8;
+    border-radius: 5px;
+    background-color: #30D5C8;
+}
+#dark{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 50px;
+    border: black 3px solid;
+    border-radius: 50px;
+    background-color: white;
+}
+#circle{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: grey 2px solid;
+    border-radius: 20px;
+    background-color: black;
+}
